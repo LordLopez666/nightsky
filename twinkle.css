@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+@Media only screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-flow: column wrap;
+    
+    width: 100%;
+  }
+}
+
+body{
+  font-family: 'Cormorant Garamond', serif;
+  width: 10vmax;
+  height: 100%;
+  padding-bottom: 50px;
+  z-index: -1;
+  
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 35%;
+  height: 25%;
+  min-width: 190px;
+  width: 190px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  overflow-y: scroll;
+  opacity: 0.5;
+}
+
+.hader-title{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.nav-header {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid white;
+    
+}
+
+.nav-header li {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#see-through{
+  border-bottom: transparent; !important
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px; 
+}
+
+a:hover {
+  font-size: 20px;
+  color: white;
+  opacity: 0.9;
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: fixed;
+  height: 60%;
+  left: 280px;
+  width: 1100px;
+  transform: translateY(200px);
+  overflow-y: scroll;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#back-ground {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(1800deg, #ffeee6, #003366, #030200);
+  }
+
+.moon {
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 8px 10px 5px 0 #FFFFE0;
+    transform: rotate(-40deg);
+  }
+
+.stars {
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+.yellow-stars {
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+}
+
+.o-stars {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+}
+
+  .star-1 {
+    position: absolute;
+    left: 77%;
+    top: 20%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    animation-duration: 0.03s;
+    animation-name: twinkle;
+  }
+
+  .star-3 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-4 {
+    position: absolute;
+    left: 65%;
+    top: 18%;
+    animation-duration: 0.032s;
+    animation-name: twinkle;
+  }
+
+.star-5 {
+    position: absolute;
+    left: 9%;
+    top: 35%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-6 {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    animation-duration: 0.033s;
+    animation-name: twinkle;
+  }
+
+.star-7 {
+    position: absolute;
+    left: 35%;
+    top: 29%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+.star-8 {
+    position: absolute;
+    left: 5%;
+    top: 13%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-9 {
+    position: absolute;
+    left: 49%;
+    top: 29%;
+    animation-duration: 0.038s;
+    animation-name: twinkle;
+  }
+
+.star-10 {
+    position: absolute;
+    left: 87%;
+    top: 23%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-11 {
+    position: absolute;
+    left: 57%;
+    top: 18%;
+    animation-duration: 0.03s;
+    animation-name: twinkle;
+  }
+
+.star-12 {
+    position: absolute;
+    left: 47%;
+    top: 15%;
+    animation-duration: 0.05s;
+    animation-name: twinkle;
+  }
+
+.star-13{
+    position: absolute;
+    left: 18%;
+    top: 33%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-14 {
+    position: absolute;
+    left: 28%;
+    top: 33%;
+    animation-duration: 0.04s;
+    animation-name: twinkle;
+  }
+
+.star-15 {
+    position: absolute;
+    left: 42%;
+    top: 18%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+.star-16 {
+    position: absolute;
+    left: 30%;
+    top: 29%;
+    animation-duration: 0.028s;
+    animation-name: twinkle;
+  }
+
+.star-17 {
+    position: absolute;
+    left: 4%;
+    top: 18%;
+    animation-duration: 0.029s;
+    animation-name: twinkle;
+  }
+
+.star-18 {
+    position: absolute;
+    left: 36%;
+    top: 29%;
+    animation-duration: 0.03s;
+    animation-name: twinkle;
+  }
+
+.star-19 {
+    position: absolute;
+    left: 92%;
+    top: 4%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+.star-20 {
+    position: absolute;
+    left: 82%;
+    top: 8%;
+    animation-duration: 0.032s;
+    animation-name: twinkle;
+  }
+
+.star-21 {
+    position: absolute;
+    left: 59%;
+    top: 25%;
+    animation-duration: 0.035s;
+    animation-name: twinkle;
+  }
+
+.star-22 {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+.star-23{
+    position: absolute;
+    left: 12%;
+    top: 21%;
+    animation-duration: 0.033s;
+    animation-name: twinkle;
+  }
+
+.star-24 {
+    position: absolute;
+    left: 95%;
+    top: 25%;
+    animation-duration: 0.034s;
+    animation-name: twinkle;
+  }
+
+.star-25 {
+    position: absolute;
+    left: 22%;
+    top: 25%;
+    animation-duration: 0.031s;
+    animation-name: twinkle;
+  }
+
+.star-26 {
+    position: absolute;
+    left: 23%;
+    top: 15.1%;
+    animation-duration: 0.037s;
+    animation-name: twinkle;
+  }
+
+.star-27 {
+    position: absolute;
+    left: 21%;
+    top: 3%;
+    animation-duration: 5.1s;
+    animation-name: twinkle;
+  }
+
+.star-28 {
+    position: absolute;
+    left: 25.5%;
+    top: 25%;
+    animation-duration: 4.9s;
+    animation-name: twinkle;
+  }
+
+.star-29 {
+    position: absolute;
+    left: 32%;
+    top: 10%;
+    animation-duration: 4.5s;
+    animation-name: twinkle;
+  }
+
+.star-30 {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    animation-duration: .031s;
+    animation-name: twinkle;
+  }
+
+.star-31 {
+    position: absolute;
+    left: 44%;
+    top: 22%;
+    animation-duration: 5.35s;
+    animation-name: twinkle;
+  }
+
+.star-32 {
+    position: absolute;
+    left: 45.5%;
+    top: 10%;
+    animation-duration: 5.05s;
+    animation-name: twinkle;
+  }
+
+.star-33{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    animation-duration: 5.3s;
+    animation-name: twinkle;
+  }
+
+.star-34 {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    animation-duration: 5.4s;
+    animation-name: twinkle;
+  }
+
+.star-35 {
+    position: absolute;
+    left: 60%;
+    top: 18%;
+    animation-duration: 5.1s;
+    animation-name: twinkle;
+  }
+
+.star-36 {
+    position: absolute;
+    left: 63%;
+    top: 31%;
+    animation-duration: 4.7s;
+    animation-name: twinkle;
+  }
+
+.star-37 {
+    position: absolute;
+    left: 66%;
+    top: 30%;
+    animation-duration: 5.1s;
+    animation-name: twinkle;
+  }
+
+.star-38 {
+    position: absolute;
+    left: 90%;
+    top: 28%;
+    animation-duration: 4.9s;
+    animation-name: twinkle;
+  }
+
+.star-39 {
+    position: absolute;
+    left: 72%;
+    top: 5%;
+    animation-duration: 4.5s;
+    animation-name: twinkle;
+  }
+
+.star-40 {
+    position: absolute;
+    left: 74%;
+    top: 25%;
+    animation-duration: 5.2s;
+    animation-name: twinkle;
+  }
+
+.star-41 {
+    position: absolute;
+    left: 80%;
+    top: 23%;
+    animation-duration: 5.35s;
+    animation-name: twinkle;
+  }
+
+.star-42 {
+    position: absolute;
+    left: 85%;
+    top: 23%;
+    animation-duration: 5.55s;
+    animation-name: twinkle;
+  }
+
+.star-43 {
+    position: absolute;
+    left: 90%;
+    top: 13%;
+    animation-duration: 5.46s;
+    animation-name: twinkle;
+  }
+
+.star-44 {
+    position: absolute;
+    left: 81%;
+    top: 23%;
+    animation-duration: 5.25s;
+    animation-name: twinkle;
+  }
+
+.star-45 {
+    position: absolute;
+    left: 80%;
+    top: 33%;
+    animation-duration: 5.45s;
+    animation-name: twinkle;
+  }
+
+.shoot {
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+}
+
+.ing1 {
+  position: absolute;
+  left: 37%;
+  top: 5%;
+  animation: move 5.5s infinite ease-out;
+  animation-delay: 3s;
+}
+
+.ing2 {
+  position: absolute;
+  left: 67%;
+  top: 10%;
+  animation: move 4s infinite ease-out;
+  animation-delay: 1.25s;
+}
+
+.ing3 {
+  position: absolute;
+  left: 61%;
+  top: 10%;
+  animation: move 5s infinite ease-out;
+  animation-delay: 3.5s;
+}
+
+.ing4 {
+  position: absolute;
+  left: 64%;
+  top: 10%;
+  animation: move 5s infinite ease-out;
+  animation-delay: 1s;
+}
+
+.ing5 {
+  position: absolute;
+  left: 41%;
+  top: 10%;
+  animation: move 3.8s infinite ease-out;
+  animation-delay: 2s;
+}
+
+@keyframes move {
+  50%, 100% {
+    opacity: 0;
+    transform: translate(-200px, 200px);
+  }
+}
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.25);
+      opacity: 0.8;
+    }
+  }
+
+@keyframes glow {
+  50%  { box-shadow: 0 0 20px, #FFFFE0;}
+}
+  
